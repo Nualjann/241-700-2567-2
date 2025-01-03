@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--ส่วนนี้ไม่แสดงออกไปที่หน้าจอ Browser-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            background-color: plum;
+            border: 0;
+            padding: 10px;
+        }
+        .button:hover{
+            background-color: aqua;
+        }
+        .button:active{
+            background-color: aquamarine;
+        }
+        .button:focus{
+            background-color: cornflowerblue;
+        }
+        input:focus{
+            background-color: cornsilk;
+        }
+        .container .item:first-child{
+            background-color: skyblue;
+        
+        }
+        .container .item:nth-child(2){
+            background-color: navajowhite;
+        
+        }
+        .container .item:last-child{
+            background-color: lightcoral;
+        
+        }
+    </style>
+</head>
+<body>
+    <!--:hover =วาง active =คลิก focus = cursor-->
+    <input type="text">
+    <button class="button">Button</button>
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
