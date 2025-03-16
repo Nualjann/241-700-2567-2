@@ -22,19 +22,19 @@
             //เลือก checkbox ทั้งหมด
             let interestDOM = document.querySelectorAll('input[name="interest"]');
             let contentHTML = '<ul>';
-            //เอาค่าvalue ออกมาเฉพาะที่เลือกใส่ไว้ที่ array
+            //เอาค่า vallue ออกมาเฉพาะที่เลือกใส่ไว้ใน Array
             for (let i = 0; i < interestDOM.length; i++) {
                 if (interestDOM[i].checked) {
                     contentHTML += '<li>' + interestDOM[i].value + '</li>';
                 }
             }
-            //วนค่าที่เลือกใส่ html กลับไป
+            //วนค่าตัวที่เลือกใส่ HTML เข้าไป-กลับไป
             contentHTML += '</ul>';
             //console.log(contentHTML);
             
-            //ใส่ HTML ใน Comtent
-            let contentHTML = document.getElementById('content');
-            contentDOM.interestHTML = contentHTML;
+            //ใส่ HTML ใน content
+            let contentDOM = document.getElementById('content');
+            contentDOM.innerHTML = contentHTML;
         }
     </script>
 </body>

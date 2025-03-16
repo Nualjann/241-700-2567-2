@@ -301,8 +301,8 @@ newScortes.forEach((ns) => {
 /*
 ojects functions
 */
-/*
-let students = [
+
+/*let students = [
     {
         name: "John",
         score: 90,
@@ -336,5 +336,4 @@ let highscore_studnt = student.filter((s) => {
 })
 
 console.log('student:',student)
-console.log('highscore_student:', highscore_student)
 */
