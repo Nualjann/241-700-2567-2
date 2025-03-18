@@ -17,7 +17,7 @@ th, td {/*เส้นตาราง*/
 }
 
 th { /*หัวตาราง*/
-    background-color: #2973B2;
+    background-color: #205781;
     color: white;
     border: 5px solid #FFFFFF; /* เพิ่มความหนาของเส้นขอบใน th */
     font-family: 'Arial', sans-serif; /* เปลี่ยนฟอนต์เป็น Arial */
@@ -27,11 +27,11 @@ th { /*หัวตาราง*/
 
 
 tr {
-    background-color: #48A6A7; /* สีพื้นหลังของทุกแถว */
+    background-color: #4F959D; /* สีพื้นหลังของทุกแถว */
 }
 
 tr:hover {
-    background-color:   #9ACBD0; /* สีพื้นหลังเมื่อ hover เม้าชึ้ ทุกแถว */
+    background-color: #3D8D7A; /* สีพื้นหลังเมื่อ hover เม้าชึ้ ทุกแถว */
 }
 
 button { /*ปุ่ม*/
@@ -64,9 +64,9 @@ body {
 }
 
 #backButton { /*ปุ่มกลับหน้าหลัก*/
-    background-color: #493D9E;
+    background-color: #6256CA;
     color: white;
-    border: 2px solid #493D9E;
+    border: 2px solid #6256CA;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
@@ -75,6 +75,6 @@ body {
 }
 
 #backButton:hover {
-    background-color: #B2A5FF;
+    background-color: #A594F9;
     transform: scale(1.05);
 }
