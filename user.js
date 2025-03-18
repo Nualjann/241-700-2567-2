@@ -12,14 +12,41 @@ const loadData = async () => {
     const userDOM = document.getElementById('users')
     //2.นำ user ทั้งหมด โหลดกลับเข้าไปhtml
 
-    let htmlData = '<div>'
-    for (let i = 0; i < response.data.length; i++) {
-        let users = response.data[i]
-        htmlData += `<div>
-        ${users.id} ${users.firstname} ${users.lastname}
-        <a href='index.html?id=${users.id}'><button>Edit</button></a>
-        <button class = 'delete' data-id='${users.id}'>Delete</button>
-        </div>`
+    let htmlData = `
+    <table border="1">
+        <thead>
+            <tr>
+              <th>ID</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Interests</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+    `;
+
+    
+    for(let i = 0; i < response.data.length; i++) {
+      let users = response.data[i]
+      htmlData += `
+        <tr>
+          <td>${users.id}</td>
+          <td>${users.firstname}</td>
+          <td>${users.lastname}</td>
+          <td>${users.age}</td>
+          <td>${users.gender}</td>
+          <td>${users.interests || '-'}</td>
+          <td>${users.description || '-'}</td>
+            <td>
+                <a href='index.html?id=${users.id}'><button>Edit</button></a>
+                <button class='delete' data-id='${users.id}'>Delete</button>
+            </td>
+        </tr>
+        `
     }
     htmlData += '</div>'
     userDOM.innerHTML = htmlData
@@ -37,5 +64,8 @@ const loadData = async () => {
                 console.log('error',error)
             }
         })
+        document.getElementById("backButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });        
     }
 }

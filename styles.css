@@ -1,74 +1,133 @@
 /* ส่วนนี้คือ css */
 /* ใช้สำหรับแต่ง (id class) */
 @font-face {
-     font-family: 'Kanit';
-     src: url('./kanit/Kanit-Regular.ttf');
-}
-
-body {
-     background-color: rgb(240, 255, 244);
-     font-family: 'Kanit';
-}
-.container {
-     width: 100%;
-     max-width: 640px;
-     margin-left: auto;
-     margin-right: auto;
-     background-color: azure;
-     padding: 20px;
-     box-sizing: border-box;
-}
-.header {
-     font-size: 30px;
-     text-align: center;
-     margin-bottom: 20px;
-}
-.header-form {
-     width: 170px;
-}
-.flex {
+     font-family: "Kanit";
+     src: url("./Kanit/Kanit-Regular.ttf");
+ }
+ 
+ body {//เปลี่ยนสีพื้นหลังหน้าเว็บ
+     font-family: "Kanit";
+     background: url("1.jpg"); /*ตั้งพื้นหลังเว็ป เป็นภาพ*/
+     background-size: cover;
      display: flex;
-}
-.form-input{
-     margin-bottom: 10px;
-}
-input.form, textarea{
-     border: 1px solid gray;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     margin: 0;
+     padding: 20px;
+ }
+ 
+ .container {
+     font-family: "Kanit";
      width: 100%;
-}
-.center{
-     text-align: center;
-}
-.button{
-     border: 0;
-     width: 65%;
-     height: 30px;
-}
-.message{
-     margin-top: 20px;
+     max-width: 600px;
+     background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("2.jpg");
+     background-size: cover;
+     padding:50px;
+     border-radius: 20px; //ทำมุมโค้ง ของกรอบ
+     box-sizing: border-box;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+     border: 5px solid #B9E5E8; /*ขอบของกรอบ (.container)มีความกว้าง px*/ 
+     color:white;
+ }
+ 
+ .header { /*ส่วนหัวข้อใหญ่แก้ตรงนี้*/
+     font-size: 50px; /*ขนาดsize*/
+     text-align: center;/*ตรงกลาง*/
+     margin-bottom: 20px; /*ระยะห่างจากขอบล่างหัวข้อ*/
+     font-weight: bold; /*ฟ้อนตัวหนา*/
+     color: white; /*สีข้อความ*/
+ }
+ .header-form {
+     width: 110px;
+ }
+ .flex {
+ display: flex;
+ }
+ .form-input {
+     margin-bottom: 10px;
+ }
+ 
+ .center {
+ text-align: center;
+ }
+ input.form, textarea {//เงาหลังกรอบข้อความ
+     width: 100%;
      padding: 10px;
-     background-color: white;
-     display : none;
-}
-.message.success{
-     background-color: lightgreen;
-     display : block;
-}
-.message.danger{
-     background-color: lightcoral;
-     display : block;
-}
-
-
-@media screen and (max-width: 768px) {
-    .flex {
-        flex-direction: column;
-    }
-    .header {
-        font-size: 24px;
-    }
-    .button {
-        width: 100%;
-    }
+     border: 2px solid #009990;
+     border-radius: 6px;
+     font-size: 16px;
+     background:hsla(178, 85.80%, 77.80%, 0.85) ;
+     transition: 0.3s;
+ }
+ 
+ 
+ input.form, textarea {//คำอธิบาย
+     border-color:rgb(62, 223, 232);
+     outline: none;
+     box-shadow: 0px 0px 5px rgba(4, 128, 159, 0.85);
+     border: 1px solidrgb(122, 208, 211);
+     width:97%;
+ 
+ }
+ input.form:hover, textarea:hover{
+     background:rgb(197, 249, 255);
+     cursor: pointer;
+ 
+ }
+ 
+ 
+ .button {//ส่งข้อความ
+     padding: 12px;
+     background:rgb(78, 187, 255);
+     border: 1px;
+     color: white;
+     font-size: 18px;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: 0.3s;
+     width: 40%;
+     height: 50px;
     
-}
+ }
+ .button{
+     font-family: "Kanit";
+ }
+ .center .button {
+     margin-top: 20px; /* เพิ่มระยะห่าง 20px ระหว่างปุ่ม */
+ }
+ .button:hover {
+     background:rgb(7, 218, 141);
+ }
+ 
+ .message {
+     margin-buttom: 20px;
+     display: none;
+     padding: 10px;
+     border-radius: 6px;
+ }
+ 
+ .message.success {
+     display: block;
+     background-color: lightgreen;
+ }
+ 
+ .message.danger {
+     display: block;
+     background-color: red;
+     color: white;
+ }
+ 
+ @media (max-width: 768px) {
+     .
+     .container {
+         padding: 15px;
+     }
+     .header {
+         font-size: 24px;
+     }
+     .button {
+         font-size: 16px;
+     }
+ }
+ 

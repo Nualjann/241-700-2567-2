@@ -1,4 +1,80 @@
-@font-face {
-    font-family: 'Kanit';
-    src: url('./kanit/Kanit-Regular.ttf');
+/* การตกแต่งตาราง */
+table {
+    width: 100%; /* ทำให้ตารางกว้างเต็มพื้นที่ */
+    border-collapse: collapse; /* รวมเส้นขอบให้เรียบร้อย */
+    margin: 20px 0; /* เพิ่มระยะห่างจากด้านบนและด้านล่าง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาใต้ตาราง */
+    border: 10px solid #FFFFFF; /* เพิ่มความหนาของเส้นขอบตาราง */
+}
+
+
+th, td {/*เส้นตาราง*/
+    padding: 12px; /* เว้นระยะห่างจากขอบเซลล์ */
+    text-align: left; /* จัดตำแหน่งข้อความให้ชิดซ้าย */
+    border: 10px solid #FFFFFF; /* เส้นขอบของเซลล์ */
+    border: 5px solid #FFFFFF; /* เพิ่มความหนาของเส้นขอบใน th และ td */
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้กับแต่ละเซลล์ */
+}
+
+th { /*หัวตาราง*/
+    background-color: #2973B2;
+    color: white;
+    border: 5px solid #FFFFFF; /* เพิ่มความหนาของเส้นขอบใน th */
+    font-family: 'Arial', sans-serif; /* เปลี่ยนฟอนต์เป็น Arial */
+    font-size: 30px; /* กำหนดขนาดฟอนต์ */
+    font-weight: bold;
+}
+
+
+tr {
+    background-color: #48A6A7; /* สีพื้นหลังของทุกแถว */
+}
+
+tr:hover {
+    background-color:   #9ACBD0; /* สีพื้นหลังเมื่อ hover เม้าชึ้ ทุกแถว */
+}
+
+button { /*ปุ่ม*/
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FFFFFF; /* สีพื้นหลังของปุ่มเมื่อ hover */
+    color: red; /* สีข้อความของปุ่มเมื่อ hoverทุกแถว */
+    transform: scale(1.1);
+}
+
+a button {
+    background-color: #16C47F; /* สีพื้นหลังของปุ่ม Edit */
+    color: white; /* สีข้อความของปุ่ม Edit */
+}
+.delete {
+    background-color: #F93827; /* สีพื้นหลังของปุ่ม Delete */
+    color: white; /* สีข้อความของปุ่ม Delete */
+}
+body {
+    background-color: #98D8EF; /* กำหนดสีพื้นหลัง */
+    color: white; /* เปลี่ยนสีข้อความ */
+
+}
+
+#backButton { /*ปุ่มกลับหน้าหลัก*/
+    background-color: #493D9E;
+    color: white;
+    border: 2px solid #493D9E;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#backButton:hover {
+    background-color: #B2A5FF;
+    transform: scale(1.05);
 }
