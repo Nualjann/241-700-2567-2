@@ -46,7 +46,7 @@ button { /*ปุ่ม*/
 button:hover {
     background-color: #FFFFFF; /* สีพื้นหลังของปุ่มเมื่อ hover */
     color: red; /* สีข้อความของปุ่มเมื่อ hoverทุกแถว */
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 a button {
